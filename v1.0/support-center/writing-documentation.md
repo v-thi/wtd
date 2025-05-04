@@ -1,16 +1,20 @@
 ---
 type: page
-title: Writing Documentation
+title: How to write documentation
 listed: true
 slug: writing-documentation
 description: 
-index_title: Writing Documentation
+index_title: How to write documentation
 hidden: 
 keywords: 
 tags: 
 ---
 
-Writing documentation on %product% cannot be any easier. In your editor pages, click anywhere on the text in your documentation and start writing. You can even use the [AI Writer](/support-center/ai-writer) to help you craft the best content. Everything in the editor is shown to you just as your readers - no split view.
+To write documentation on the %product% click anywhere in the editor page to start writing.
+
+{% callout type="info" title="Info" %}
+You can use [AI Writer](/support-center/ai-writer) to create the better content
+{% /callout %}
 
 ## Page Sections
 
