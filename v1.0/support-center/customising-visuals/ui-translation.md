@@ -10,23 +10,19 @@ keywords:
 tags: 
 ---
 
-
-If you wish to change %product% UI  text that shows to your readers, which defaults to English, then you can modify it through two ways:
+If you would like to customize the %product% UI text displayed to your readers, which is set to English by default, you have two options for modification:
 
 - Changing the Language from Documentation {% icon classes="fas fa-book inv-icon" /%} settings.
 - Modifying the [javascript](/support-center/custom-javascript).
 
 ## Which Text Can be Changed?
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/ckijtlxtqsrppnueicnqo469wmsd08k7h8cge0rj9drbigktlaulq2m66ve8siyu.jpg" caption="" mode="responsive" height="724" width="1185" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/ckijtlxtqsrppnueicnqo469wmsd08k7h8cge0rj9drbigktlaulq2m66ve8siyu.jpg" mode="responsive" height="724" width="1185" %}
 {% /image %}
 
-
-All text on the UI that we provide that shows to your reader can be translated. This includes text in landing page, search, table of contents as well as the version and section pickers.
+All text displayed on the user interface (UI) that we provide can be translated for your audience. This encompasses text found on the landing page, within the search functionality, in the table of contents, as well as the version and section selectors.
 
 The text that is available to be translated is detailed as such:
-
 
 {% code %}
 {% tab language="javascript" %}
@@ -94,10 +90,9 @@ The text that is available to be translated is detailed as such:
 {% /tab %}
 {% /code %}
 
-
 ## Translate UI Text
 
-To specify in which language should the UI text show in:
+To specify the language in which the UI text should be displayed, please follow the steps below:
 
 - From the sidebar, choose Documentation {% icon classes="fas fa-book inv-icon" /%}
 - Next to the title, click on Settings {% icon classes="fas fa-cog" /%}
@@ -107,8 +102,7 @@ Each documentation can have its own translation.
 
 At the moment, we have support for English, French, Deutsch and Spanish. If there is a language which you need for your documentation which we do not provide yet, then please [contact us](/support-center/contact-us).
 
-## How to Customise UI Text
-
+## How to Customize UI Text
 
 {% html %}
 <div class="grow-border text-left">
@@ -117,9 +111,7 @@ At the moment, we have support for English, French, Deutsch and Spanish. If ther
 </div>
 {% /html %}
 
-
 By using [custom javascript](/support-center/custom-javascript), you can modify any or all of the default translations. For example, you can add a script to your HEAD tags to override table of contents and search results as such:
-
 
 {% code %}
 {% tab language="html" title="Javascript" %}
@@ -137,19 +129,15 @@ By using [custom javascript](/support-center/custom-javascript), you can modify 
 {% /tab %}
 {% /code %}
 
-
-
 {% callout type="info" title="Info" %}
-Some translations contain variables such as `search.results` which will be replaced by the number of search results. The question mark indicates where the number will be replaced and must be kept in the translation.
+Some translations may include variables, such as `search.results`, which will be substituted with the actual number of search results. It is essential to retain the question mark in the translation, as it marks the position for where the number will be inserted.
 
 Other translations such as `consent.text` have plus signs where a URL should be added.
 {% /callout %}
 
-
 ### Change Translation According to Content
 
-To change the UI text according to which version or which documentation is selected, then you can do that with [custom javascript](/support-center/custom-javascript). Example code that you can use:
-
+To change the UI text based on the selected version or documentation, you can use [custom javascript](/support-center/custom-javascript). Here is an example code you can use:
 
 {% code %}
 {% tab language="html" title="Javascript" %}
@@ -166,5 +154,3 @@ To change the UI text according to which version or which documentation is selec
 </script>
 {% /tab %}
 {% /code %}
-
-
