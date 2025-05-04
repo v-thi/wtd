@@ -10,12 +10,11 @@ keywords:
 tags: 
 ---
 
-
 %product% provides powerful tools to enable you to easily move your content around, edit it and restructure it, all out of the editor.
 
 ## Import Sources
 
-You can import to %product% from many sources:
+You can import data to %product% from a variety of sources:
 
 - %product% export (available for entire project imports and one page imports)
 - [Markdown](/support-center/external-sources#markdown-import)
@@ -34,15 +33,13 @@ To import documentation, follow these steps:
 
 Importing could take a few seconds up to a minute.
 
-
 {% callout type="info" title="Info" %}
-All imports add versions. Versions, documentations and pages are never overwritten.
+All imports are designed to add version information. It’s important to note that versions, documentation, and pages are never overwritten, ensuring the integrity and historical accuracy of your data.
 {% /callout %}
-
 
 ## Import a page into %product%
 
-You can import a single Markdown or a [Darkdown](/support-center/importing-documentation#darkdown-format) page at a time into %product%.
+You can import a single Markdown file or a [Darkdown](/support-center/importing-documentation#darkdown-format) page at a time into %product%. This streamlined process allows for easy integration and ensures that your content is formatted correctly for optimal use within the platform.
 
 To import one page, follow these steps:
 
@@ -52,12 +49,10 @@ To import one page, follow these steps:
 
 ## Structuring Files
 
-To import documentation from %product% export into %product%, you must structure your files as such:
+To import documentation from %product% export into %product%, it is essential to organize your files according to the following structure:
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/gdjrdpzqetrabvbmo4vrkrvq6w346ul1ya2he3pe1dsfdkobbnmn8x9yy5bitog7.png" caption="" mode="responsive" height="704" width="722" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/gdjrdpzqetrabvbmo4vrkrvq6w346ul1ya2he3pe1dsfdkobbnmn8x9yy5bitog7.png" mode="responsive" height="704" width="722" %}
 {% /image %}
-
 
 Where, for example:
 
@@ -67,13 +62,13 @@ Where, for example:
 - `1 Formatting Text.md`, `2 Keyboard Shortcuts.md` and `3 Using Markdown.md` are all subpages of Writing Documentation page.
 - `settings.json` is `Support Center` documentation settings file. Settings file is an optional file.
 
-Every parent page should have a a Markdown file and a folder with the same exact name.
+Every parent page must include a Markdown file along with a corresponding folder that shares the exact same name.
 
-The orders must be incremental and starting from 1. If an order is not supplied in the file name, then no index order is guaranteed.
+The orders must be incremented, beginning from 1. If an order is not provided in the filename, there is no assurance that the index order will be maintained.
 
-Additionally, you may add OpenAPI spec files in a folder named `refs` in the version folder.
+Additionally, you can enhance your project by including OpenAPI specification files within a designated folder named `refs`, located in the corresponding version folder. This allows for better organization and accessibility of your API documentation.
 
-All the files in the import must be compressed into a ZIP file.
+All files included in the import process must be compressed into a ZIP file format.
 
 ## Darkdown Format
 
@@ -84,7 +79,6 @@ Darkdown Format is simple. Each file must contain a header and optionally conten
 Each file contains a header depending on the index element being described.
 
 - Page:
-
 
 {% code %}
 {% tab language="yaml" %}
@@ -102,9 +96,7 @@ tags: tag1,tag2
 {% /tab %}
 {% /code %}
 
-
 - Category:
-
 
 {% code %}
 {% tab language="yaml" %}
@@ -115,9 +107,7 @@ title: Start Here
 {% /tab %}
 {% /code %}
 
-
 - Link:
-
 
 {% code %}
 {% tab language="yaml" %}
@@ -129,9 +119,7 @@ url: https://developerhub.io
 {% /tab %}
 {% /code %}
 
-
 - Separator:
-
 
 {% code %}
 {% tab language="none" %}
@@ -141,13 +129,11 @@ type: separator
 {% /tab %}
 {% /code %}
 
-
 ### Content
 
-Category, link and separator elements do not have content. Pages do have content, and it can be pure Markdown or Markdown mixed with our powerful blocks annotation.
+Category, link, and separator elements do not contain any content. In contrast, pages are rich with content, which can consist of pure Markdown or a combination of Markdown along with our advanced blocks annotation features.
 
-Draft and published page contents can be defined in an export and it is annotated by a `---draft` or `---published` header, such as:
-
+The contents of draft and published pages can be clearly defined in an export, distinguished by the use of a `<code>---draft</code>` or `<code>---published</code>` header. For example:
 
 {% code %}
 {% tab language="yaml" %}
@@ -161,9 +147,7 @@ Published content is here
 {% /tab %}
 {% /code %}
 
-
-An example of published content that contains a heading, text and a code block would be:
-
+An example of published content that includes a heading, descriptive text, and a code block is as follows:
 
 {% code %}
 {% tab language="yaml" %}
@@ -194,11 +178,9 @@ $plugin[{
 {% /tab %}
 {% /code %}
 
-
 ### Blocks
 
-As Markdown does not include many of our powerful features, so we created Darkdown formatting to enable such features. All blocks are exported as such:
-
+Since Markdown lacks support for many of our powerful features, we developed Darkdown formatting to incorporate these advanced capabilities. All blocks are exported in the following manner:
 
 {% code %}
 {% tab language="yaml" %}
@@ -209,15 +191,13 @@ $plugin[{
 {% /tab %}
 {% /code %}
 
-
-Where type is one of `code-block`, `image`, `video`, `table`, `github-code`, `synced-block`, `tab-block`, `index-list` and `custom-html`. Data definition depends on the type.
+Where the type is one of the following: `code-block`, `image`, `video`, `table`, `github-code`, `synced-block`, `tab-block`, `index-list`, or `custom-html`. The data definition varies depending on the specific type selected.
 
 ### Inline Blocks
 
-Additionally, inline blocks are exported in Darkdown format such as [badges](/support-center/badges), [icons](/support-center/icons) and [keyboard keys](/support-center/keyboard-keys). For example,
+Additionally, inline blocks are exported in Darkdown format, such as [badges](/support-center/badges), [icons](/support-center/icons), and [keyboard keys](/support-center/keyboard-keys). For example,
 
 This badge: {% badge type="success" text="Great!" /%} would be formatted as:
-
 
 {% code %}
 {% tab language="yaml" %}
@@ -225,9 +205,7 @@ This badge: {% badge type="success" text="Great!" /%} would be formatted as:
 {% /tab %}
 {% /code %}
 
-
 And this icon: {% icon classes="fas fa-adjust" /%} would be formatted as:
-
 
 {% code %}
 {% tab language="yaml" %}
@@ -235,15 +213,13 @@ And this icon: {% icon classes="fas fa-adjust" /%} would be formatted as:
 {% /tab %}
 {% /code %}
 
-
-Feel free to export any page to understand the formatting of its contents.
+You are welcome to export any page to gain insights into the formatting of its content. This allows you to better understand the layout and structure used throughout the application.
 
 ## Table Format
 
-Tables are exported in Markdown format, except if column width is set then we use the Darkdown format in order to retain the information.
+Tables are exported in Markdown format by default. However, if the column width is specified, we will utilize the Darkdown format to ensure that all information is preserved accurately.
 
-The Markdown format for tables used for imports and exports are as such:
-
+The Markdown format for tables utilized in imports and exports is structured as follows:
 
 {% code %}
 {% tab language="none" %}
@@ -253,7 +229,6 @@ The Markdown format for tables used for imports and exports are as such:
 | Chrome | Mobile | Yes | Fully supported |
 {% /tab %}
 {% /code %}
-
 
 Requirements:
 
@@ -265,25 +240,22 @@ Requirements:
 
 ## Image Import
 
-If an image is referenced in Markdown format in one of the pages, it will automatically be downloaded to our servers and served from our content delivery network.
+When an image is referenced using Markdown format on any of the pages, it will be automatically downloaded to our servers. Subsequently, it will be served from our content delivery network, ensuring efficient and reliable access for users.
 
-Images can be uploaded from two sources:
+Images can be uploaded from two distinct sources:
 
 - HTTP, or
 - Local
 
-Regardless of the image source, each image must be at maximum 10MB in size. Otherwise, the import will fail.
-
+Regardless of the image source, it is essential that each image does not exceed a maximum file size of 10MB. Exceeding this limit will result in the import process failing.
 
 {% callout type="warning" title="Warning" %}
-By importing images on %product%, you are responsible to ensure that you have rights to all data.
+By importing images on %product%, you are responsible for ensuring that you have the necessary rights to all data. It is important to verify that you possess the appropriate licenses or permissions for any images used to avoid potential copyright infringements.
 {% /callout %}
-
 
 ### HTTP Image Import
 
-To import images from the internet, they should be referenced as such:
-
+To import images from the internet, please ensure they are referenced using the following format:
 
 {% code %}
 {% tab language="markdown" %}
@@ -293,15 +265,13 @@ HTTP Image:
 {% /tab %}
 {% /code %}
 
-
-It will then be downloaded from its source, and uploaded to our content delivery network. The image must be accessible online publicly, otherwise the import will fail.
+The image will subsequently be downloaded from its source and uploaded to our content delivery network. It's essential that the image is publicly accessible online; otherwise, the import process will fail.
 
 ### Local Image Import
 
-To import images locally from the provided ZIP file, they must exist in a folder named `assets` alongside the versions.
+To successfully import images locally from the provided ZIP file, ensure that they are located in a folder named `assets`, which should be placed alongside the versions. This organizational structure is essential for proper access and retrieval of the images during the import process.
 
 They should be referenced as such:
-
 
 {% code %}
 {% tab language="markdown" %}
@@ -311,6 +281,4 @@ Local Image:
 {% /tab %}
 {% /code %}
 
-
 Inside `assets` folder, any folder structure is allowed.
-
