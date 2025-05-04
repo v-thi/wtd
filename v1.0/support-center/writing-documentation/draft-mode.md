@@ -10,16 +10,13 @@ keywords:
 tags: 
 ---
 
+Draft mode empowers your editors with enhanced capabilities, offering the flexibility to write without restrictions and the ability to publish content at the optimal moment. It is a staging environment for pages, enabling ongoing work and review until they are fully prepared for publication.
 
-Draft mode brings more power to your editors, the flexibility to write freely, and the ability to publish at the right time.
+Writing documentation with a pen is a thing of the past. Our editors seek the ability to make adjustments seamlessly without fearing making errors.
 
-### How is it different than changing version or documentation publish setting?
+### How is it different than changing the publish setting?
 
-Draft mode allows you to control publishing at a page level rather than at a documentation or version level. You can create new pages that are still hidden from the readers while the rest of your documentation is published.
-
-### Why?
-
-No one writes their documentation using a pen. Our users want to be able to make changes and not to worry about mistakes.
+Unpublishing a page makes it unavailable to readers. However, you can keep a page published with its latest stable content while working on a draft. This way, you can update content without interrupting access to the current version.
 
 ## Page Life-Cycle
 
@@ -31,37 +28,32 @@ Each page could have three states:
 
 ## Listed, published
 
-Once you publish the unlisted draft page, it becomes listed. Listed means that it is visible to your readers. Also, the changes that were in draft mode are now applied and published.
+Once you publish the unlisted draft page, it becomes listed. Listed means that it is visible to your readers. Also, the changes that were in draft mode have now been applied and published.
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/57bukdpkzx3zpjduddbfsh77pfd2mjv1fwel4vpz3675vkzbzvpuekl14zs3898q.png" caption="Published page" mode="responsive" height="1834" width="2740" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/8zg493muuqnvpvad9wxaqj4xwpo3wl3ihnbz77zu451yv059y8o15kub0elravk6.png" caption="Published page" mode="responsive" height="1834" width="2740" %}
 {% /image %}
-
 
 The **Publish** {% icon classes="fas fa-forward" /%} button will indicate that the page is published.
 
 ## Listed, in draft mode
 
-If you edit a page that was listed and published, it goes back into draft mode. That means that your readers still can access the page, and can read the contents of the page as when it was listed, but your teammates can keep on making edits that are only visible to them.
+If you edit a listed and published page, it goes back into draft mode. That means your readers can still access the page and read the contents as they were listed, but your teammates can keep making edits only visible to them.
 
 Publish when you are ready!
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/a4jzwek25ylivk2ub2tlf84v6n6pgwfglz7zhcxrlteefqv6p7qels96ogto9280.png" caption="Draft page" mode="responsive" height="1834" width="2740" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/0um2gm879j0jx6g4nvjffo9m22h7r5wadjg8ymg1qzsl8nj20kfju3ra3waaj2rh.png" caption="Draft page" mode="responsive" height="1834" width="2740" %}
 {% /image %}
-
 
 Draft pages show a draft page icon in the index, and the control buttons allow you to publish.
 
 ## Draft Pages History
 
-Every draft is saved in the page history and is indicated as a draft version. To discard all draft changes, and to revert to the published version:
+Every draft is saved in the page history and is indicated as a draft version. To discard all draft changes and to revert to the published version:
 
 1. Click on {% icon classes="fas fa-history" /%} Show Published under the page title.
-2. Make any edit.
+2. Make any edits.
 3. Save the page again and publish it.
 
 ## More
 
 Check out the [keyboard shortcuts](/support-center/keyboard-shortcuts) for saving and publishing faster.
-

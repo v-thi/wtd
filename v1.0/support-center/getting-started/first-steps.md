@@ -31,6 +31,8 @@ You could also sign up using Google account.
 
 Welcome page appears after you signed up. Please, add the project name in the field.
 
+After signing up, you will be taken to the Getting Started page. You will be asked for your first project's name.
+
 {% callout type="info" title="Info" %}
 Project name is the title of the page, that users see on the browser's tab
 {% /callout %}

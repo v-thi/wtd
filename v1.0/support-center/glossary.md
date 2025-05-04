@@ -10,15 +10,14 @@ keywords:
 tags: 
 ---
 
-
-Glossary helps readers understand terms in-page in the context of your product. Glossary contains terms and definitions that you define. When these terms appear in a page, they're automatically underlined. Readers can hover over these underlined terms to view their definitions, providing contextual clarity without navigating away.
+The glossary defines terms related in this document. The terms show up  automatically underlined on a page. Readers hovers over the underlined terms to see the definitions, offering clear context without leaving the page.
 
 ## How to use Glossary
 
 To use glossary:
 
-1. [Define](/support-center/glossary#defining-glossary) the terms and their definitions in the glossary.
-2. [Add](/support-center/glossary#adding-glossary-to-page) the term to the page.
+1. [Define](/support-center/glossary#defining-glossary) the terms.
+2. [Add](/support-center/glossary#adding-glossary-to-page) term to the page.
 
 ## Defining Glossary
 
@@ -27,7 +26,7 @@ To define terms in the glossary:
 - From the sidebar, click on Glossary {% icon classes="fas fa-bookmark" /%}.
 - At the bottom of the list, click on "Add glossary term".
 - Write the term (word or phrase, case sensitive).
-- Write the definition (one liner).
+- Write the one liner definition.
 - Click "Save".
 
 ## Adding Glossary to Page
@@ -43,4 +42,3 @@ Here you can find a {% glossary term="glossary" /%} term that we have defined.
 - Only applies in documentation pages.
 - Does not apply in code blocks.
 - Might be out of view on mobile.
-
