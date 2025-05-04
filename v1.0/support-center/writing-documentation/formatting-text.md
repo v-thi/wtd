@@ -10,8 +10,7 @@ keywords:
 tags: 
 ---
 
-
-There are three ways to format your text:
+You can format your text in three ways:
 
 - [Toolbar](/support-center/formatting-text#using-toolbar)
 - [Markdown](/support-center/using-markdown)
@@ -19,37 +18,42 @@ There are three ways to format your text:
 
 ## Using Toolbar
 
-To format text in your documentation, highlight with your cursor the chunk of text you want to format. A toolbar like this one will show.
+To format text in your documentation, highlight the text you want to format. A toolbar will appear.
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/v3zaenz701kx6y776vkro5jo3isflocxw6tvqfxnz7yj0afq5oufpbnejgajk8fr.png" caption="" mode="responsive" height="178" width="1122" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/25c4a60v3jqgxzzadig7emk8jpkjjgamtdajn5hri0wpfajfwmrnc1534717shne.png" mode="responsive" height="178" width="1122" %}
 {% /image %}
 
+With the toolbar, you can:
 
-Using the toolbar you can do the following:
-
-- Bold
-- Italics
-- External link
-- Heading 2
-- Heading 3
-- Heading 4
-- Unordered list
-- Ordered list
-- Inline code
-- Comment
+- Make text bold
+- Italicize text
+- Add an external link
+- Create a heading (Level 2)
+- Create a heading (Level 3)
+- Create a heading (Level 4)
+- Create an unordered list
+- Create an ordered list
+- Insert inline code
+- Add a comment
 
 And you can use the [auto$](/support-center/ai-writer).
 
 ## Tips & Tricks
 
+### HTML in Text
+
 If you need to write down text that contains HTML tags, then you can do so if it is inserted as line code, as such:
 
 `<body><p>Hey</p></body>`.
+
+### Ordered List Numbering
+
+In case you interrupt the ordering of a list by adding a [block](/support-center/blocks), you can resume the ordering by typing on a new line the number, dot and a space, such as `5.`.
+
+Furthermore, you can right-click on the number of the first item in an ordered list to change it.
 
 ---
 
 ## Hungry for more?
 
 If you need more formatting options, speak to us!
-
