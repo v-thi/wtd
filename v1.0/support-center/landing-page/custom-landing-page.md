@@ -61,7 +61,13 @@ Note that we do not evaluate or validate the HTML inserted - please double check
 
 ## Adding CSS
 
-If you wish to add CSS to enhance the appearance of your website or application, you have multiple options to do so effectively. You can add your custom styles directly to [Custom CSS](/support-center/custom-css). Alternatively, you're also able to include your CSS styles within the [Custom HEAD Tags](/support-center/custom-javascript) section by wrapping them inside a `<style>` tag. Furthermore, if you prefer to utilize styles defined in an external stylesheet, you can achieve this by linking to the CSS file using a `<link>` tag, allowing for easier maintenance and organization of your CSS rules.
+- To add CSS to improve your website or application, you have several options:
+
+- You can add your custom styles directly to [Custom CSS](/support-center/custom-css)
+
+- You can include your CSS styles in the [Custom HEAD Tags](/support-center/customjavascript) section by wrapping them in a `<style>` tag.
+
+- If you prefer to use an external stylesheet, link to the CSS file with a `<link>` tag for easier organization and maintenance of your CSS rules.
 
 {% code %}
 {% tab language="css" %}
