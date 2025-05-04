@@ -18,23 +18,23 @@ An unpublished page is a page that your readers cannot reach. It can only be edi
 {% /image %}
 
 
-## How could a page get unpublished?
+## When in a page unpublished?
 
-A page can be unpublished because:
+A page is unpublished when:
 
-- It was never published yet. After a page is created and first saved as a draft, it would still be unpublished until first published.
-- A teammate has unpublished the page.
-- If it is a child page, a teammate has unpublished its parent page.
+- It is a draft that was never published to begin with. Drafts are saved in an unpublished state by default until you choose to publish them.
+- A teammate has unpublished a previously published page.
+- If it is a child page, and a teammate has unpublished its parent page.
 
-## How to unpublish a page?
+## How do I unpublish a page?
 
-To unpublish a page that is published:
+To unpublish a page that is currently published:
 
-- In the index, open the **Options** {% icon classes="fas fa-ellipsis-v" /%} menu for the page to be unpublished.
-- Click on **Unpublish** {% icon classes="fas fa-circle red-text" /%}.
+- In the left-side navigation bar, hover over the page you want to unpublish to reveal the the **Options** {% icon classes="fas fa-ellipsis-v" /%} menu.
+- Click to open the **Options** {% icon classes="fas fa-ellipsis-v" /%}, then click **Unpublish** {% icon classes="fas fa-circle red-text" /%}.
 
-To allow the page the be publish again:
+## How do I enable a page to be published?
 
-- In the index, open the **Options** {% icon classes="fas fa-ellipsis-v" /%} menu for the page to be published.
-- Click on **Allow to Publish** {% icon classes="fas fa-circle green-text" /%}.
+- In the left-side navigation bar, hover over the page you'd like to publish to reveal the the **Options** {% icon classes="fas fa-ellipsis-v" /%} menu.
+- Click to open the **Options** {% icon classes="fas fa-ellipsis-v" /%}, then click **Allow to Publish** {% icon classes="fas fa-circle green-text" /%}.
 
