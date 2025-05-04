@@ -10,8 +10,7 @@ keywords:
 tags: 
 ---
 
-
-Documentations are contained within versions and are published in versions.
+Documentation is organized into distinct versions, and each version is published accordingly.
 
 To have your documentation available online for the public to read:
 
@@ -19,11 +18,9 @@ To have your documentation available online for the public to read:
 2. Select the right version.
 3. Click on Publish to Public.
 
-
 {% callout type="success" title="Wow!" %}
-All the documentations under that version are now available for everyone to read them!
+All documentation for this version is now readily accessible for everyone to read!
 {% /callout %}
-
 
 ## Unpublishing
 
@@ -33,9 +30,6 @@ To unpublish your documentation and stop public access:
 2. Select the right version.
 3. Click on Unpublish. You will be prompted to confirm.
 
-
 {% callout type="warning" title="Warning" %}
-A crow 🐦  telling the reader that there is nothing to see on this page will show if a reader tries to access an unpublished documentation
+If a reader attempts to access unpublished documentation, a crow 🐦 will appear, conveying the message that there is nothing to see on this page.
 {% /callout %}
-
-
