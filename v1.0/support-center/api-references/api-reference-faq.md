@@ -10,13 +10,11 @@ keywords:
 tags: 
 ---
 
+## Why is the request/response body empty even with a schema object present?
 
-### Why is request/response body empty even though there is a schema object?
-
-Check that your [schema object](https://swagger.io/specification/#schema-object) defines a type. If it doesn't, then we'll show the text `<type>` in the table. `properties` by itself is not enough to denote that the schema is an object.
+Ensure that your [schema object](https://swagger.io/specification/#schema-object) includes a defined type. If a type is not specified, the table will display the text `<type>`. Merely having `properties` present does not suffice to indicate that the schema is categorized as an object.
 
 For example:
-
 
 {% code %}
 {% tab language="yaml" title="Bad ❌" %}
@@ -42,11 +40,9 @@ content:
 {% /tab %}
 {% /code %}
 
-
 ### How do I reorder Operations?
 
-Operations (for example `GET /version` , `POST /reference`) are ordered according to how they are ordered in the OpenAPI definition itself. We use `tags` to group the operations, but we do not modify the order. For example:
-
+Operations, such as `GET /version` and `POST /reference`, are organized in the precise sequence they appear within the OpenAPI definition. Although we employ `tags` to categorize these operations for easier navigation, it's crucial to understand that we maintain their original order without any modifications. For instance:
 
 {% code %}
 {% tab language="yaml" %}
@@ -86,12 +82,8 @@ tags:
 {% /tab %}
 {% /code %}
 
-
-Feel free to reorder the operations in your OpenAPI definition as needed to create the right journey for your readers.
-
+You are encouraged to rearrange the operations within your OpenAPI definition to create an optimal and seamless experience for your readers. This flexibility allows you to present the information in a way that enhances understanding and navigation through your API documentation.
 
 {% callout type="warning" title="Cannot use API editor to reorder" %}
-Unfortunately, due to limitations in the API editor, reordering operations from the source view in the API editor has no effect. The operations must be reordered locally on a file, and uploaded as an API reference import to take effect.
+Unfortunately, due to limitations in the API editor, reordering operations from the source view has no effect. To achieve the desired reordering, you must make the changes locally in a file and then upload the modified file as an API reference import for the changes to take effect.
 {% /callout %}
-
-
