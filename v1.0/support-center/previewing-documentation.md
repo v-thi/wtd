@@ -10,25 +10,21 @@ keywords:
 tags: 
 ---
 
-
 %product% was designed to unify the view between the editor and the live version.
 
 There is no need to preview your documentation. The editor already is showing you the same view of how it will look to your documentation readers 😉
-
 
 {% callout type="success" title="Woah!" %}
 What was I thinking before?!
 {% /callout %}
 
-
 If you are really keen on previewing it, then you can see it live by publishing it.
 
 ## URL Strategy
 
-URL, which is the link you see in your browser, defines which project, version and section (documentation or API reference) are loaded.
+The URL, which is the link you see in your browser, plays a crucial role in determining which project, version, and section (documentation or API reference) are currently being accessed. It specifies the exact resources the user wishes to view, allowing for a seamless navigation experience across different parts of the documentation.
 
 Here is a summary of how we load resources using URLs:
-
 
 {% table widths="388" %}
 | URL | Result | 
@@ -40,9 +36,7 @@ Here is a summary of how we load resources using URLs:
 | `https://<project>/` | Loads the landing page if enabled, or the default page in the default section of the default version | 
 {% /table %}
 
-
-The following are deprecated URLs which you should not use anymore, however they are now redirected for backward-compatibility:
-
+The following URLs have been deprecated and are no longer recommended for use. However, for backward compatibility, they have been redirected:
 
 {% table %}
 | URL | Redirected To | 
@@ -56,16 +50,14 @@ The following are deprecated URLs which you should not use anymore, however they
 
 Any other form of link will load the default page.
 
-Note that you can add a base path if you are [hosting under your own existing website](/support-center/hosting#hosting-under-your-own-custom-domain), the above rules would still be applicable but a base path would be added right after the `<project>`. For example, instead of `https://<project>/<version>/<documentation>/<page>`, the link would be `https://<project>/<base-path>/<version>/<documentation>/<page>`.
+You can add a base path if you are [hosting under your own existing website](/support-center/hosting#hosting-under-your-own-custom-domain). The same rules apply, but the base path will be added right after the `<project>`. For example, instead of `https://<project>/<version>/<documentation>/<page>`, the link would be `https://<project>/<base-path>/<version>/<documentation>/<page>`.
 
-## Print-Optimised
+## Print-Optimized
 
-Our pages are print-optimised (specially for A4 paper size). We recommend having the wide documentation layout when printing, and always printing from the published documentation site (not on the editor). If you are an enterprise customer, then you may also [export an entire version as PDF](/support-center/pdf-export).
+Our pages are print-optimized (specially for A4 paper size). We recommend having the wide documentation layout when printing, and always printing from the published documentation site (not on the editor). If you are an enterprise customer, then you may also [export an entire version as PDF](/support-center/pdf-export).
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/3lmhzjyqdyxlpxseucjwoqcesxxee9u0u2843iodjlbf7dm5shwebyl6svraln6v.jpg" caption="" mode="responsive" height="2270" width="2832" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/3lmhzjyqdyxlpxseucjwoqcesxxee9u0u2843iodjlbf7dm5shwebyl6svraln6v.jpg" mode="responsive" height="2270" width="2832" %}
 {% /image %}
-
 
 ## Embed Mode
 
@@ -76,14 +68,11 @@ There are two types of embed mode:
 - Minimal: Hides the top navigation, footer, index and table of contents. Mode is `embed`.
 - Normal: Hides the top navigation and footer only. Mode is `embed_full`.
 
-
 {% callout type="info" title="Note" %}
-Minimal and normal modes are the same when window width is small as index and table of contents are hidden when window width is small by default.
+In scenarios where the window width is small, minimal and normal modes exhibit similar behavior. This is because both the index and the table of contents are hidden by default when the window width is reduced.
 {% /callout %}
 
-
-Embed mode is enabled by adding a `?mode=embed` or `?mode=embed_full` to any %product% URL (except landing pages). For example, if you want to show your users a page under `https://dev.company.io/ios/getting-started` then you may load an `iframe` with `src="https://dev.company.io/ios/getting-started?mode=embed"`
-
+Embed mode can be turned on by adding a `?mode=embed` or `?mode=embed_full` to any %product% URL (except landing pages). For instance, to show users the page at `[https://dev.company.io/ios/getting-started](https://dev.company.io/ios/getting-started)`, you can load an `iframe` with `src="[https://dev.company.io/ios/getting-started?mode=embed"](https://dev.company.io/ios/getting-started?mode=embed&quot;)`.
 
 {% code %}
 {% tab language="markup" title="HTML" %}
@@ -91,11 +80,7 @@ Embed mode is enabled by adding a `?mode=embed` or `?mode=embed_full` to any %pr
 {% /tab %}
 {% /code %}
 
-
 Here is a preview:
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/1woh5xa6urcb2hchq5a5mo5dg4dstqkepelmdm1758d6jyxqrr5azl1hlapda7n5.png" caption="" mode="responsive" height="1755" width="3112" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/1woh5xa6urcb2hchq5a5mo5dg4dstqkepelmdm1758d6jyxqrr5azl1hlapda7n5.png" mode="responsive" height="1755" width="3112" %}
 {% /image %}
-
-
