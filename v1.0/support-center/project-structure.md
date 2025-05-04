@@ -10,15 +10,14 @@ keywords:
 tags: 
 ---
 
+%product% projects offer you the most flexibility for creating documentation.
 
-%product% projects provide most flexibility compared to other services available.
+## How Are Projects Structured?
 
-## How are projects structured?
+Projects are at the top of the documentation hierarchy. Each project contains the following:
 
-Projects are at the top of the hierarchy. Each project contains the following:
-
-- A landing page.
-- One or many versions.
+- A landing page which users see when they first navigate to your documentation. 
+- One or many version numbers for your documentation. 
 
 Each version acts as a container for:
 
@@ -29,7 +28,7 @@ Each documentation contains:
 
 - An index of one or many pages, categories and external links.
 
-Different projects, even if owned by the same team, are not inter-linked and their data is siloed. You may link between projects using external links. Each project can have its own customisations, branding, look, feel and team.
+Different projects, even if owned by the same team, are not inter-linked and their data is siloed. You may link between projects using external links. Each project can have its own customizations, branding, look, feel and team.
 
 ### Example Setup
 
@@ -85,4 +84,3 @@ To use %product% to its fullest, we recommend the following:
 
 - It's important to use versioning correctly, as the landing page shows the contents of the default/latest version.
 - If a documentation contains too many pages, you might want to separate them into different documentations.
-
