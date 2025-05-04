@@ -10,24 +10,23 @@ keywords:
 tags: 
 ---
 
+Accelerate your development process and allow your readers to experience your APIs directly from the API Reference by utilizing an integrated API playground. This hands-on feature enables users to interact with and test your APIs in real-time, enhancing their understanding and engagement.
 
-Cut development time and have your readers try out your APIs right from the API Reference with an API playground.
-
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/s7cc38nwil1xux3tr2ysvka2tmu4dy9peraofbzmd0dgj8dwecno1o0dtzjig0wp.png" caption="" mode="responsive" height="947" width="1498" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/jh4tazapcz1aemaiifgk6h3423c2r7sij4iu7rxs1lkilsnzt6vktlpw2ycq8rnn.png" mode="responsive" height="528" width="1126" %}
 {% /image %}
 
+With Try It Out, all headers, query parameters, form data, and request body fields come with example values from your OpenAPI spec. Readers can change these fields and send an API request directly from the API Reference. The headers and parameters are checked for their type, and available enums are displayed. Users can start OAuth 2.0 flows directly from the API reference to obtain access tokens.
 
-With Try It Out, all headers, query parameters, form data, and request body fields are pre-populated with examples that you provide in the OpenAPI spec. Readers can modify the fields and make an API request directly from the API Reference. Headers and parameters are validated against their type, and enums are shown if available. Users can initiate OAuth 2.0 flows right from the API reference to get access tokens.
-
-The response of the API request will be shown, with the status code. Readers can hover over the status code to see the response headers.
+The response of the API request will be displayed alongside the corresponding status code. Users can hover over the status code to access and view the detailed response headers.
 
 ## Prerequisites to Enabling Try It Out
 
 Before enabling try it out, there are two external configurations that you must perform:
 
-1. Set up the [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers for your docs domain. All requests are made from the browser directly, so you must set up the CORS headers to allow the docs domain to make requests to your API. The CORS headers should allow the docs site origin to make any HTTP request, with all headers that you might expect to send, and to expose all headers returned. The CORS headers response should look as such:
+1. To configure the [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers for your documentation domain, it is essential to ensure that all requests are processed directly by the browser. This requires you to establish CORS headers that grant permission for the documentation site to interact with your API.
+The CORS settings should permit the documentation site origin to make any type of HTTP request, and you should allow all headers that you may potentially send. In addition, it is crucial to expose all headers that are returned in the response.
 
+The CORS headers in your server's response should be structured as follows:
 
 {% code %}
 {% tab language="yaml" title="Headers" %}
@@ -39,29 +38,28 @@ Access-Control-Max-Age: 86400
 {% /tab %}
 {% /code %}
 
-
-2. (Optional) Set up your OAuth2 client to redirect to our redirect URL. If your API uses OAuth2 and you wish for the reader to be able to generate a token from the API playground directly, then you must add our redirect URL to your OAuth2 client. See [OAuth 2.0 Authentication](/support-center/try-it-out#oauth-20-authentication).
+2. (Optional) Configure your OAuth2 client to redirect to our designated redirect URL. If your API utilizes OAuth2 and you want users to be able to generate a token directly from the API playground, it is essential to include our redirect URL in your OAuth2 client settings. For further guidance, refer to [OAuth 2.0 Authentication](/support-center/try-it-out#oauth-20-authentication).
 
 ## Enabling Try It Out
 
-To enable try it out for an API Reference, check Show Try It Out in the API Reference settings {% icon classes="fas fa-cog" /%}.
+To enable the "Try It Out" feature for an API Reference, simply check the "Show Try It Out" option in the API Reference settings {% icon classes="fas fa-cog" /%}.
 
 ## Try It Out Support
 
-Try It Out is supported for all API operations except:
+Try It Out is supported for all API operations except for the following:
 
 - Responses that do not have a JSON or plain text media type.
 - Requests that upload files.
 
-All requests are made from the browser directly, so you must ensure that the API returns the correct [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers for your docs domain.
+All requests are initiated directly from the browser, making it essential to configure the API to return the appropriate [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers specific to your documentation domain. This ensures smooth communication and data retrieval between the browser and your API.
 
-## Personalising Authentication Values
+## Personalizing Authentication Values
 
-To personalise authentication values, such as in the header and query string, please [contact us](/support-center/contact-us).
+To personalize authentication values, such as those in the header and query string, please [contact us](/support-center/contact-us).
 
 ## OAuth 2.0 Authentication
 
-To allow OAuth 2.0 authentication inside the API playground, you must add the following redirect URL to your Auth2.0 client settings:
+To enable OAuth 2.0 authentication within the API playground, you need to include the following redirect URL in your OAuth 2.0 client settings:
 
 `https://<docs-site>/$reader-oauth2`
 
@@ -69,22 +67,18 @@ For example:
 
 `https://docs.developerhub.io/$reader-oauth2`.
 
-Once this is set up, you may enable OAuth 2.0 Authentication by checking Show OAuth2 Authentication in the API Reference Settings {% icon classes="fas fa-cog" /%}.
+Once this is set up, you can enable OAuth 2.0 Authentication by checking the option for Show OAuth2 Authentication in the API Reference Settings {% icon classes="fas fa-cog" /%}.
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/e0jobuetme9nvg8o1owww91kgxd818us0rk2dycm5jk6mujlxmceb25jdbt0dfmr.png" caption="" mode="set" height="531.234375" width="558" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/553zj73met7ww1tenhx3dshynq38ntnwildkarec0z6f5u7gynxm25262n7gd88y.png" mode="set" height="834" width="558" %}
 {% /image %}
 
-
-
 {% callout type="info" title="Redirect URL" %}
-If you want to allow OAuth 2.0 authentication in the editor as well, then you must add the following redirect URL: `https://app.developerhub.io/$reader-oauth2`. However, this must not be used on a production API.
+To enable OAuth 2.0 authentication within the editor, it is essential to add the following redirect URL: `[https://app.developerhub.io/$reader-oauth2](https://app.developerhub.io/$reader-oauth2)`. Please note that this URL is intended for development purposes only and should not be utilized in a production API environment.
 {% /callout %}
-
 
 ## Custom Interceptors
 
-Custom Interceptors allow you to modify a request before sending it. This can be useful if, for example, you need to add digital signatures. Custom interceptors are middleware written in javascript.
+Custom Interceptors provide a powerful way to modify requests prior to sending them, enabling you to tailor your application's behavior to suit specific needs. For instance, you might use them to add digital signatures or apply authentication tokens. These interceptors function as middleware and are written in JavaScript, allowing for flexible and seamless integration into your existing workflow.
 
 ### How to set up Custom Interceptors?
 
@@ -98,7 +92,6 @@ Function: `registerCustomInterceptor`.
 Returns: Nothing.
 
 Arguments: Function - `function(data, next)`. Where `data` has the following definition:
-
 
 {% code %}
 {% tab language="typescript" title="Data" %}
@@ -116,13 +109,11 @@ Arguments: Function - `function(data, next)`. Where `data` has the following def
 {% /tab %}
 {% /code %}
 
-
-And `next` is a function that must be called once per custom interceptor, providing the modified data as an argument, to pass to the next custom interceptor.
+The `<code>next</code>` function is essential and should be invoked once for each custom interceptor. It takes the modified data as an argument, which is then passed on to the subsequent custom interceptor in the sequence.
 
 ### Custom Interceptor Examples
 
 1. Has no effect. Only logs the data:
-
 
 {% code %}
 {% tab language="javascript" %}
@@ -133,9 +124,7 @@ window.registerCustomInterceptor(function (data, next) {
 {% /tab %}
 {% /code %}
 
-
 2. Adds a new header:
-
 
 {% code %}
 {% tab language="javascript" %}
@@ -146,9 +135,7 @@ window.registerCustomInterceptor(function (data, next) {
 {% /tab %}
 {% /code %}
 
-
 3. Modifies form data:
-
 
 {% code %}
 {% tab language="javascript" %}
@@ -161,9 +148,7 @@ window.registerCustomInterceptor(function (data, next) {
 {% /tab %}
 {% /code %}
 
-
 4. Modifies JSON body only on a certain API reference:
-
 
 {% code %}
 {% tab language="javascript" %}
@@ -180,14 +165,12 @@ window.registerCustomInterceptor(function (data, next) {
 {% /tab %}
 {% /code %}
 
-
 ## Troubleshooting
 
 ### Request Failing
 
-If the request fails with message `"Request failed (Unknown Error)"` and status 0, then ensure that CORS headers are setup correctly. You can confirm that this is the issue by checking your browser's DevTools. Such an error would show in Chrome DevTools: `Access to XMLHttpRequest at '<url>' from origin '<url>' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource`.
+If the request fails with the message `"Request failed (Unknown Error)"` and status 0, it is essential to verify that CORS (Cross-Origin Resource Sharing) headers are configured properly. You can determine whether this is the underlying issue by inspecting your browser's DevTools. Specifically, in Chrome DevTools, you may encounter an error message that reads: `Access to XMLHttpRequest at '<url>' from origin '<url>' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource`. This indicates that the CORS setup needs to be addressed.
 
 ### No Response Headers
 
-If response headers are not getting sent, ensure that your API is returning `Access-Control-Expose-Headers: *` header which allows the browser to read the response headers.
-
+If response headers are not being sent, make sure that your API is returning the `<code>Access-Control-Expose-Headers: *</code>` header. This header is crucial as it enables the browser to access and read the response headers from your API.
