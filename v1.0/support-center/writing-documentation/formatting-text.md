@@ -54,6 +54,6 @@ Furthermore, you can right-click on the number of the first item in an ordered l
 
 ---
 
-## Hungry for more?
+## More info?
 
-If you need more formatting options, speak to us!
+If you want more formatting options, contact us!
