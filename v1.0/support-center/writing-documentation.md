@@ -10,8 +10,7 @@ keywords:
 tags: 
 ---
 
-
-Writing documentation on %product% cannot be any easier. In your editor pages, click anywhere on the text in your documentation and start writing down. You can even use [the AI Writer](/support-center/ai-writer) to help you craft the best content. Everything in the editor will be shown to you just as your readers - no split view.
+Writing documentation on %product% cannot be any easier. In your editor pages, click anywhere on the text in your documentation and start writing. You can even use the [AI Writer](/support-center/ai-writer) to help you craft the best content. Everything in the editor is shown to you just as your readers - no split view.
 
 ## Page Sections
 
@@ -19,13 +18,13 @@ Pages must have a **title** and **content**.
 
 ### Title
 
-The title of the page will be visible in:
+The title of the page is visible in:
 
 1. The index of the documentation.
 2. The title of the browser tab.
 3. The URL of the page.
 
-So choose the title carefully to be meaningful to your readers.
+Choose the title carefully to be meaningful to your readers.
 
 ### Content
 
@@ -33,11 +32,10 @@ The content of the page can consist of text, [tables](/support-center/tables), [
 
 ## Saving
 
-To save a page, hit the Save Draft button {% icon classes="fas fa-cloud-upload-alt" /%} at the bottom right. Your edits will be saved in [draft mode](/support-center/draft-mode) until you publish them. Every edit you make is saved in the [page history](/support-center/page-history).
+To save a page, click {% icon classes="fas fa-cloud-upload-alt" /%} **Save Draft** in the bottom right. Your edits will be saved in [draft mode](/support-center/draft-mode) until you publish them. Every edit you make is saved in the [page history](/support-center/page-history).
 
-When you are ready to publish the changes to your readers, click the Publish button {% icon classes="fas fa-forward" /%}.
+When you are ready to publish the changes to your readers, click {% icon classes="fas fa-forward" /%} **Publish**.
 
 ## Spell Check
 
-Your browser spell checker is doing its job right away.
-
+Your browser’s spell checker is doing its job right away.
