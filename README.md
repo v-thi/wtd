@@ -8,22 +8,36 @@ You’ll get access to our platform (via UI and GitHub sync) and can try out our
 
 ## Ways you can contribute
 ✅ Use the AI writer to suggest rewrites, clarifications, or summaries of existing content
+
 ✅ Identify unclear or incomplete explanations and improve them
+
 ✅ Reorganize content for better flow or discoverability
+
 ✅ Add missing examples, screenshots, or diagrams
+
 ✅ Improve accessibility and plain language
+
 ✅ Provide feedback on the AI writer’s outputs—what works well, what could improve
 
 ## How it works
 🔹 We’ll give you access to our docs project inside DeveloperHub
+
 🔹 You can edit directly in the UI, or explore GitHub sync workflows
+
 🔹 Try the AI writer to enhance a section and share your experience
+
 🔹 No coding required, but GitHub users can also try the repo sync
 
+
 ## Perfect for you if
+✨ You’re curious about new tools
+
 ✨ You’re curious about docs-as-code workflows
+
 ✨ You love testing AI-assisted writing tools
+
 ✨ You enjoy improving clarity, structure, and user experience
+
 
 ## Links
 👉 [https://docs.developerhub.io](DeveloperHub.io Docs)
