@@ -10,15 +10,12 @@ keywords:
 tags: 
 ---
 
-
-Callouts are pieces of information that standout from normal text to notify the user. They change colour according to their type.
+Callouts are pieces of information that stand out from normal text to notify the user. They change color according to their type.
 
 To create a callout:
 
-
 {% synced id="open-block-menu" %}
 {% /synced %}
-
 
 - Select Callout {% icon classes="fas fa-exclamation" /%}
 
@@ -37,27 +34,18 @@ Callouts have editable title and contents.
 
 ## Callout Example
 
-
 {% callout type="success" title="Success" %}
 Great **success**!
 {% /callout %}
-
-
 
 {% callout type="warning" title="Warning" %}
 Woah, watch out!
 {% /callout %}
 
-
-
 {% callout type="info" title="Info" %}
 Informative callout
 {% /callout %}
 
-
-
 {% callout type="error" title="Error" %}
 This doesn't look right
 {% /callout %}
-
-
