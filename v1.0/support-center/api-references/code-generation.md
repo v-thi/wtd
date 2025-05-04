@@ -10,17 +10,14 @@ keywords:
 tags: 
 ---
 
+An example request is generated for each operation. This example request serves as a valuable resource, enabling your developers to integrate your services more efficiently by providing them with boilerplate code that simplifies the process of calling the operation. To see this feature in action, visit our [API References](/v1.0/api/ref).
 
-An example request is generated for each operation. The example request helps your developers integrate your services faster by providing them boilerplate code for calling the operation. See how it works on our [API References](/v1.0/api/ref).
-
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/4rl0t9eb81bnec76nidimct92m3y14cfefmpwzipy1h5mffcfdsilwqwuyo8ebjt.png" caption="" mode="600" height="308" width="627" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/4rl0t9eb81bnec76nidimct92m3y14cfefmpwzipy1h5mffcfdsilwqwuyo8ebjt.png" mode="600" height="308" width="600" %}
 {% /image %}
-
 
 ## Available Libraries
 
-Code generation is available using:
+Code generation can be accomplished through several methods, including:
 
 - [cURL](https://curl.haxx.se/) (Bash)
 - [request](https://www.npmjs.com/package/request) (Node.js)
@@ -33,4 +30,3 @@ Code generation is available using:
 ## Need more libraries?
 
 Let us know by [contacting us](/support-center/contact-us).
-
