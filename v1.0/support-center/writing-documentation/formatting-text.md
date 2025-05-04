@@ -42,7 +42,7 @@ And you can use the [auto$](/support-center/ai-writer).
 
 ### HTML in Text
 
-If you need to write down text that contains HTML tags, then you can do so if it is inserted as line code, as such:
+If you need to write text with HTML tags, you can do this by inserting it as line code, like this:
 
 `<body><p>Hey</p></body>`.
 
