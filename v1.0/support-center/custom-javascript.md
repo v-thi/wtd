@@ -10,8 +10,6 @@ keywords:
 tags: 
 ---
 
-
-
 {% html %}
 <div class="grow-border text-left">
 <div class="grow-star">⭐</div>
@@ -19,8 +17,7 @@ tags:
 </div>
 {% /html %}
 
-
-Apply project-wide javascript, styles, links, and meta that gets added to the HEAD tag of the page.
+Integrate project-wide JavaScript, styles, links, and meta tags that will be added to the HEAD section of the page. This ensures that essential scripts and styling are globally accessible throughout your application.
 
 ## Customising HEAD Tags
 
@@ -32,12 +29,11 @@ To customise HEAD tags:
 - To publish it to readers, click Save & Publish.
 - To revert the draft changes, click Revert.
 
-All custom tags will only run in live mode, and will not load in editor mode.
+All custom tags will only run in live mode and will not load in editor mode.
 
 ## Tags Format
 
 Tags should be added fully as they would exist in HEAD, such as:
-
 
 {% code %}
 {% tab language="markup" title="HTML" %}
@@ -59,20 +55,15 @@ Tags should be added fully as they would exist in HEAD, such as:
 {% /tab %}
 {% /code %}
 
-
 Do not add any `<body>`, `<html>` or other tags that do not naturally exist in HEAD.
-
 
 {% callout type="warning" title="Warning" %}
 Do not use async or defer in your scripts. Scripts will be loaded async regardless.
 {% /callout %}
 
-
-
 {% callout type="error" title="Only ES5" %}
 To ensure compatibility with all browsers, do not add any scripts that contain any syntax that is not supported by ECMAScript 5 (ES5, ECMAScript 2009). We do not automatically check or compile into ES5. Failure to do so may render your site unusable to some or all users.
 {% /callout %}
-
 
 ## Why add scripts?
 
@@ -87,12 +78,11 @@ By adding scripts, you can do more with your documentation:
 
 ## External Hooks
 
-There are several events that are triggered by %product% which can help you achieve the level of customisation you need.
+There are several events that are triggered by %product% which can help you achieve the level of customisation you need. The full list of hooks is available at [Javascript Dispatched Events](/support-center/developer-tools#javascript-dispatched-events).
 
 ### Project Loaded
 
 To listen to when a project loads, which is also when most elements of the page also are loaded, you may listen to a custom event on document called `onprojectloaded`. An example:
-
 
 {% code %}
 {% tab language="markup" %}
@@ -105,19 +95,15 @@ To listen to when a project loads, which is also when most elements of the page 
 {% /tab %}
 {% /code %}
 
-
 If you are aiming at modifying the top navigation, then you should use this event.
-
 
 {% callout type="warning" title="Use `onprojectloaded` instead of `document.onload`." %}
 Because %product% is a single page application, `document.onload` has no effect in Custom HEAD tags. All Custom HEAD tags are actually loaded after `document.onload` is called. Use `onprojectloaded` whenever you need to use `document.onload`.
 {% /callout %}
 
-
 ### Section Changes
 
-To listen to when a section (landing page, documentation, version) changes, you may listen to a custom event on document called `onsectionchange`. An example:
-
+To listen to when a section (landing page, documentation) changes, you may listen to a custom event on document called `onsectionchange`. An example:
 
 {% code %}
 {% tab language="markup" %}
@@ -139,13 +125,11 @@ To listen to when a section (landing page, documentation, version) changes, you 
 {% /tab %}
 {% /code %}
 
-
 If the section changed is a documentation, then the indices are also listed.
 
 ### Page Changes
 
 To listen to when a page changes, you may listen to a custom event on document called `onpagechange`. An example:
-
 
 {% code %}
 {% tab language="markup" %}
@@ -157,11 +141,9 @@ To listen to when a page changes, you may listen to a custom event on document c
 {% /tab %}
 {% /code %}
 
-
 ### Redirection Rules
 
 Using Custom JS, you can setup front-end redirection rules. For example, if you want to redirect one of your projects which has semantic versioning less than 1.0 to another, you might want to use something like this:
-
 
 {% code %}
 {% tab language="markup" %}
@@ -184,9 +166,7 @@ Using Custom JS, you can setup front-end redirection rules. For example, if you 
 {% /tab %}
 {% /code %}
 
-
 Or if you have changed a documentation slug, then you might want to redirect to the new slug:
-
 
 {% code %}
 {% tab language="markup" %}
@@ -203,7 +183,6 @@ Or if you have changed a documentation slug, then you might want to redirect to 
 </script>
 {% /tab %}
 {% /code %}
-
 
 If you need more powerful redirection rules, then check [server-side 301 redirect rules](/support-center/url-redirects).
 
@@ -222,4 +201,3 @@ For testing if a script or style in HEAD tags is causing issues, you might want 
 For example, if your docs are available on `https://example.com/docs` then you can disable HEAD tags for your session using `https://example.com/docs?disableScripts=true`.
 
 Once you refresh the page without `disableScripts=true`, HEAD tags will be enabled again.
-
