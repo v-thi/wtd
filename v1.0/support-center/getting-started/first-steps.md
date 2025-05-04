@@ -1,22 +1,25 @@
 ---
 type: page
-title: First Steps
+title: How to start
 listed: true
 slug: first-steps
 description: 
-index_title: First Steps
+index_title: How to start
 hidden: 
 keywords: 
 tags: 
 ---
 
+To use the %product%, do the following:
 
-%product% is very easy to setup. Let's walk you through how to do that.
+1. Sign up.
+2. Create the project.
 
-## Signing Up
+## Sign Up
 
-You can sign up for free, just head to our [Signup](https://app.developerhub.io/login#signup) page. All we need is your e-mail address to remember who you are and which projects belong to you. You could also sign up using Google.
+To sign up, go to the [Signup](https://app.developerhub.io/login#signup) page. Please, provide your e-mail address and the project name. 
 
+You could also sign up using Google account.
 
 {% html %}
 <div class="text-left">
@@ -24,20 +27,24 @@ You can sign up for free, just head to our [Signup](https://app.developerhub.io/
 </div>
 {% /html %}
 
+## Create the project
 
-## Creating your first project
+Welcome page appears after you signed up. Please, add the project name in the field.
 
-After signing up, you will be taken to the Welcoming page. You will be asked for your first project's name.
+{% callout type="info" title="Info" %}
+Project name is the title of the page, that users see on the browser's tab
+{% /callout %}
 
-The project name is what will be showing to your users as the title of the page. This usually shows on your browser's tab.
+Add the subdomain name.
 
-You will also be asked for a subdomain. The subdomain is basically a word containing letters, numbers and hyphens that points to where your documentation will live under developerhub.io domain. The subdomain will be unique to you as long as you are registered on %product%. For example, if your subdomain was `pied-piper`, then your documentation will be accessible through `pied-piper.developerhub.io`.
+{% callout type="info" title="Info" %}
+The subdomain is a word containing letters, numbers, and hyphens that points to where your documentation will live under the developerhub.io domain
+{% /callout %}
 
+The subdomain is unique to you as long as you are registered on %product%. For example, if your subdomain was `pied-piper`, then your documentation will be accessible through `pied-piper.developerhub.io`.
 
 {% callout type="success" title="Congratulations" %}
 You've set up your first project on DeveloperHub.io.
 {% /callout %}
 
-
-If you would like to set up your project to be reachable on your own domain, see [Using Custom Domain](/support-center/using-custom-domain).
-
+To set up your project to be reachable on your own domain, see [Using Custom Domain](/support-center/using-custom-domain).
