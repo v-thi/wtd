@@ -10,11 +10,11 @@ keywords:
 tags: 
 ---
 
-%product% projects offer the most flexibility for creating documentation.
+%product% projects offer you the most flexibility for creating documentation.
 
 ## How Are Projects Structured?
 
-Projects are the highest level in the hierarchy. Each project contains the following:
+Projects are at the top of the documentation hierarchy. Each project contains the following:
 
 - A landing page.
 - One or many versions.
