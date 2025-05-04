@@ -27,7 +27,7 @@ You can sign up for free, just head to our [Signup](https://app.developerhub.io/
 
 ## Creating your first project
 
-After signing up, you will be taken to the Welcoming page. You will be asked for your first project's name.
+After signing up, you will be taken to the Getting Started page. You will be asked for your first project's name.
 
 The project name is what will be showing to your users as the title of the page. This usually shows on your browser's tab.
 
