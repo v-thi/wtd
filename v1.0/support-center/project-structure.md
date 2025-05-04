@@ -14,7 +14,7 @@ tags:
 
 ## How Are Projects Structured?
 
-Projects are at the top of the hierarchy. Each project contains the following:
+Projects are the highest level in the hierarchy. Each project contains the following:
 
 - A landing page.
 - One or many versions.
@@ -28,7 +28,7 @@ Each documentation contains:
 
 - An index of one or many pages, categories and external links.
 
-Different projects, even if owned by the same team, are not inter-linked and their data is siloed. You may link between projects using external links. Each project can have its own customisations, branding, look, feel and team.
+Different projects, even if owned by the same team, are not inter-linked and their data is siloed. You may link between projects using external links. Each project can have its own customizations, branding, look, feel and team.
 
 ### Example Setup
 
