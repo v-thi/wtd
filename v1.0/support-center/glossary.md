@@ -10,7 +10,7 @@ keywords:
 tags: 
 ---
 
-The glossary provides definitions for terms pertinent to this document. These terms are displayed automatically with an underlined format on the page. Readers can hover over the underlined terms to view their definitions, which offers clear context without requiring them to navigate away from the current page.
+The glossary defines terms related in this document. The terms show up  automatically underlined on a page. Readers hovers over the underlined terms to see the definitions, offering clear context without leaving the page.
 
 ## How to use Glossary
 
@@ -26,12 +26,12 @@ To define terms in the glossary:
 - From the sidebar, click on Glossary {% icon classes="fas fa-bookmark" /%}.
 - At the bottom of the list, click on "Add glossary term".
 - Write the term (word or phrase, case sensitive).
-- Write the definition (one liner).
+- Write the one liner definition.
 - Click "Save".
 
 ## Adding Glossary to Page
 
-To add a glossary term to a page, type `/` to open the inline block menu, then select the term from the list. You can also search for the term by typing.
+To add the glossary term to a page, open up the inline block menu by typing `/`, and selecting the term from the list. You may type to search for the term.
 
 ## Example Glossary
 
