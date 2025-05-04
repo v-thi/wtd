@@ -3,11 +3,11 @@ type: page
 title: Server Headers
 listed: true
 slug: server-headers
-description: 
+description: This document provides guidance on configuring server headers for your documentation site.
 index_title: Server Headers
 hidden: 
-keywords: 
-tags: 
+keywords: server headers, security headers, content security policy, CSP, HTTP headers, strict transport security, X-Frame-Options, Referrer-Policy, nonce, custom headers, docs hosting, security configuration
+tags: security
 ---
 
 
@@ -35,7 +35,7 @@ These are some security headers that you may want to apply.
 
 
 {% callout type="warning" title="Caution" %}
-Make sure you fully understand what each header is. Using headers incorrectly could cause your entire custom domain to be **irreversibly broken**. We are not liable for any damages due to misconfiguration.
+Make sure you fully understand each header. Using headers incorrectly could cause your entire custom domain to be irreversibly broken. We are not liable for any damages due to misconfiguration.
 {% /callout %}
 
 
