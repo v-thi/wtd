@@ -10,10 +10,9 @@ keywords:
 tags: 
 ---
 
-
 %product% projects provide most flexibility compared to other services available.
 
-## How are projects structured?
+## How Are Projects Structured?
 
 Projects are at the top of the hierarchy. Each project contains the following:
 
@@ -85,4 +84,3 @@ To use %product% to its fullest, we recommend the following:
 
 - It's important to use versioning correctly, as the landing page shows the contents of the default/latest version.
 - If a documentation contains too many pages, you might want to separate them into different documentations.
-
