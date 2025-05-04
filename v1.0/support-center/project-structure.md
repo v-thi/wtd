@@ -10,7 +10,7 @@ keywords:
 tags: 
 ---
 
-%product% projects offer the most flexibility for creating documentation compared to other services.
+%product% projects offer the most flexibility for creating documentation.
 
 ## How Are Projects Structured?
 
