@@ -10,7 +10,6 @@ keywords:
 tags: 
 ---
 
-
 Help your readers find the resources they need right from Hello!
 
 There are two types of Landing Pages:
@@ -18,10 +17,8 @@ There are two types of Landing Pages:
 - Main landing page: The page that lives at the root `/` of the docs site.
 - Other landing pages: Pages that live on other paths. Other landing pages can be designated as 404 pages.
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/dbvfs91re3vdnrn94lyaq9fx1lbuq54g4j3yknkgx3kxtn6n5jl85oq9n3lc159e.png" caption="" mode="responsive" height="709" width="1035" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/dbvfs91re3vdnrn94lyaq9fx1lbuq54g4j3yknkgx3kxtn6n5jl85oq9n3lc159e.png" mode="responsive" height="709" width="1035" %}
 {% /image %}
-
 
 ## Main Landing Page
 
@@ -63,7 +60,7 @@ Further customisation can be done using [Custom CSS](/support-center/custom-css)
 
 ## Custom Landing Page
 
-If you want to use a custom landing page, writing your own HTML/CSS/JS, check [auto$](/support-center/custom-landing-page).
+If you want to use a custom landing page or write your own HTML/CSS/JS, read [auto$](/support-center/custom-landing-page).
 
 ## Adding Landing Pages
 
@@ -92,9 +89,6 @@ A landing page can be designated as a 404 page. When a reader visits an unrecogn
 3. Click on the settings {% icon classes="fas fa-cog" /%}
 4. Toggle Use as a 404 Page.
 
-
 {% callout type="info" title="One 404 page" %}
 Only one 404 page can exist in the project
 {% /callout %}
-
-

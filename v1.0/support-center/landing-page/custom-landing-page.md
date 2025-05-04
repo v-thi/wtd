@@ -35,7 +35,7 @@ To modify the landing page HTML:
 
 - Click **Edit HTML**.
 
-{% image url="https://uploads.developerhub.io/prod/8gDX/5s63qy4afvfvr2zhhr63t1jk2m754wpg5pqt14vxlxrodgmkx36god03w53er9ug.png" caption="Use the Custom Landing Page feature to modify the HTML content for the Main Landing Page." mode="responsive" height="794" width="1198" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/5s63qy4afvfvr2zhhr63t1jk2m754wpg5pqt14vxlxrodgmkx36god03w53er9ug.png" caption="Use the Custom Landing Page to modify the HTML for the Main Landing Page." mode="responsive" height="794" width="1198" %}
 {% /image %}
 
 - Paste or type in the HTML to make your custom landing page. Click Save. This will save the HTML in draft mode so that you can test it out.
@@ -50,10 +50,10 @@ This also apply to `<style>`. All styles should be moved to [Custom CSS](/suppor
 
 ## Crafting a Landing Page
 
-{% image url="https://uploads.developerhub.io/prod/8gDX/cg8l0luz1apglog6zv8iao7bu7cdhonjqqy082mocd1iki3bw6hn4mm5kcreig35.jpg" mode="responsive" height="507" width="914" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/cg8l0luz1apglog6zv8iao7bu7cdhonjqqy082mocd1iki3bw6hn4mm5kcreig35.jpg" caption="Customize HTML for the Landing Page" mode="responsive" height="507" width="914" %}
 {% /image %}
 
-When customising the landing page, you may enter HTML that will be inserted asynchronously in your landing page.
+When customizing the landing page, you have the option to enter HTML code, which will be inserted asynchronously into your landing page. 
 
 {% callout type="warning" title="Unvalidated HTML" %}
 Note that we do not evaluate or validate the HTML inserted - please double check that it is valid.
@@ -61,7 +61,13 @@ Note that we do not evaluate or validate the HTML inserted - please double check
 
 ## Adding CSS
 
-If you wish to add CSS, then you can add it to [Custom CSS](/support-center/custom-css), or you could add it in [Custom HEAD Tags](/support-center/custom-javascript) in a `<style>` tag, or even link external CSS by using `<link>` tag.
+If you wish to add CSS to enhance the appearance of your website or application, you have multiple options to do so effectively. You can add your custom styles directly to [Custom CSS](/support-center/custom-css). Alternatively, you're also able to include your CSS styles within the [Custom HEAD Tags](/support-center/custom-javascript) section by wrapping them inside a `<style>` tag. Furthermore, if you prefer to utilize styles defined in an external stylesheet, you can achieve this by linking to the CSS file using a `<link>` tag, allowing for easier maintenance and organization of your CSS rules.
+
+{% code %}
+{% tab language="css" %}
+<link rel="stylesheet" type="text/css" href="MyCustomeCSSFile.css"/>
+{% /tab %}
+{% /code %}
 
 {% callout type="warning" title="Global CSS" %}
 Remember that the CSS is applied globally. Modifying classes of conventional names (specially Bootstrap selectors), such as `.container` might have unwanted effects.

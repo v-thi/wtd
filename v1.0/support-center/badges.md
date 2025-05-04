@@ -10,8 +10,7 @@ keywords:
 tags: 
 ---
 
-
-Badges provide labelling and are a part of %product%'s inline blocks.
+Badges serve as informative labels and play an integral role in %product%'s inline blocks.
 
 ## How to add a Badge?
 
@@ -23,8 +22,7 @@ To add a badge, start typing "/" and choose **Badge** from the inline block list
 
 ## Advanced Configuration
 
-Custom badge could be modified through [Custom CSS](/support-center/custom-css) to be any colour you want, or even depending on the content it has:
-
+The custom badge can be easily modified via [Custom CSS](/support-center/custom-css) to adopt any color of your choice. Additionally, you can adjust its color dynamically based on the content it contains:
 
 {% code %}
 {% tab language="css" title="Custom CSS" %}
@@ -40,6 +38,4 @@ Custom badge could be modified through [Custom CSS](/support-center/custom-css) 
 {% /tab %}
 {% /code %}
 
-
 Would yield {% badge type="custom" text="Pink Badge" /%} and {% badge type="custom" text="Purple Badge" /%}.
-

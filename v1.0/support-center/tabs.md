@@ -10,20 +10,16 @@ keywords:
 tags: 
 ---
 
-
-Tabs serve as an effective tool for organising instructions tailored to various customer segments, specific objectives, or diverse implementations. By separating content into distinct sections, they enhance user experience and ensure that relevant information is easily accessible.
+Tabs serve as an effective tool for organizing instructions tailored to various customer segments, specific objectives, or diverse implementations. By categorizing content into distinct sections, they significantly enhance the user experience and ensure that relevant information is easily accessible. This structured approach not only improves navigation but also allows users to quickly find what they need, ultimately streamlining their interaction with the material.
 
 To create tabs:
-
 
 {% synced id="open-block-menu" %}
 {% /synced %}
 
-
 - Select Tabs {% icon classes="fas fa-folder" /%}
 
 ## Tab Example
-
 
 {% tabs %}
 {% tab title="Android" %}
@@ -73,7 +69,6 @@ import AwesomeSDK
 {% /tab %}
 {% /tabs %}
 
-
 ## Tab Block Features
 
 The following are features of the tab block:
@@ -83,13 +78,12 @@ The following are features of the tab block:
 - Headings inside tabs can be used with [page linking](/support-center/page-linking).
 - Tab contents are searchable.
 - Tab contents can contain all kinds of blocks and formatting supported by %product%
-- When switching to a tab, all other tab blocks on the page having the same title will also get switched to automatically.
-- When switching to a tab, when visiting another page in the docs, all the tab blocks will switch to the same tab title if possible automatically.
+- When you switch to a tab, all other tabs with the same title on the page will switch automatically as well.
+- When you switch to a tab or visit another page in the docs, all tab blocks will automatically switch to the same tab title if possible.
 
 ## Tabs Known Limitations
 
 The following are known limitations of tabs:
 
-- While tab contents are searchable, if a search result exists in the non-default tab, the tab will not be switched to on choosing that search result..
+- You can search through tab contents, but clicking on a search result from a non-default tab won't switch to that tab.
 - Tabs cannot contain other tabs.
-

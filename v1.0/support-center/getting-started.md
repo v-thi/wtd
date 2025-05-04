@@ -10,14 +10,11 @@ keywords:
 tags: 
 ---
 
-
-
 {% html %}
 <div style="text-align: center;">
 	<img id="dhImage" style="max-width: 300px;" />
 </div>
 {% /html %}
-
 
 Welcome %user.name% to our _Supercharged_ documentation which has been written using %product%.
 
@@ -31,7 +28,8 @@ Using %product% all you have to do is to write your content. No coding, no desig
 
 %product% provides you with the simplest way ever to have your documentation written. But don't take our word for it, try it out. Everything you need to do on %product% is literally a click away from you. %product% decreases the time needed by your team to have a functional documentation up and running, allowing them to focus on the most important part: _Writing the perfect documentation_.
 
-%product% is the only platform that you, your techie and non-techie writers, as well as your readers will love 💛 That is because:
+{% image url="https://uploads.developerhub.io/prod/8gDX/6no1tmwu2msxcabtpzv27sbfnctg8pazcv6hpqv0r4ct1rd6gp46blluqyr95hsm.png" mode="responsive" height="446" width="452" %}
+{% /image %}
 
 - Beautiful clear documentation decreases your product's churn rate and helps your prospective customers understand your product. Our expert design makes sure that your documentation is so easy to navigate through 📈
 - Our integrations help you reach out to customers and to track usage, allowing you provide higher customer happiness even on your documentation pages.
@@ -48,4 +46,3 @@ Using %product% all you have to do is to write your content. No coding, no desig
 ---
 
 Our team has been working so hard since December 2017 to craft the best possible experience for you to enjoy writing documentation, without any hassles. Our editor is specifically designed to give you the same exact experience of the live documentation while editing, so you never have to worry about how would it look after publishing it. Our engineers have made sure that you get the smoothest experience editing and also viewing your documentation.
-
