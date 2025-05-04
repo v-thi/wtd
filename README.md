@@ -47,8 +47,12 @@ Your work will be acknowledged publicly, and you’ll be helping other users of 
 
 ## Links
 👉 [Actual DeveloperHub.io Docs](https://docs.developerhub.io)
+
 👉 [Duplicate docs we will be editing for this project](https://wtd.developerhub.io)
+
 👉 [DeveloperHub.io Site](https://developerhub.io)
+
 👉 [DeveloperHub.io Login](https://app.developerhub.io)
+
 
 No prior DeveloperHub experience needed—fresh perspectives welcome!
