@@ -10,17 +10,14 @@ keywords:
 tags: 
 ---
 
-
 No documentation can be complete with just text.
 
 To add more than text to your documentation, just hit {% key key="/" /%} anywhere in your documentation, search, and select the block you need.
 
 The blocks menu will show, just like this one:
 
-
-{% image url="https://uploads.developerhub.io/prod/8gDX/ehrixf0742dsnktm5ljb24tqipgqri5y8lqsacrec7j43t7iai9rxnx8jv2y16r8.png" caption="" mode="set" height="443.453125" width="262" %}
+{% image url="https://uploads.developerhub.io/prod/8gDX/ehrixf0742dsnktm5ljb24tqipgqri5y8lqsacrec7j43t7iai9rxnx8jv2y16r8.png" mode="set" height="914" width="262" %}
 {% /image %}
-
 
 %product% supports the following blocks:
 
@@ -45,17 +42,15 @@ And the following inline blocks. Inline blocks go on the same line as text. %pro
 - [Font Awesome Icons](/support-center/icons)
 - [auto$](/support-center/keyboard-keys)
 
-
 {% callout type="warning" title="Block menu not showing?" %}
-Then where you are typing has text formatting (bold/italic/inline code) on. Remove any text formatting on the cursor position before trying to add blocks.
+The text you are editing may have text formatting (such as bold, italic, or inline code). Remove any text formatting on the cursor position before trying to add blocks.
 
-Formatting does carry from the previous line. To resolve this, you probably just need to hit  Backspace  then  ↵  again.
+Formatting continues from the previous line. To begin a new line with no formatting, place your cursor at the end of the formatted text, then press Backspace  and  ↵  again.
 {% /callout %}
-
 
 ## Emojis
 
-We have support for emojis everywhere, so if you felt the need to express using emojis then don't be shy 😄
+product has full emoji support. Feel free to express yourself! 😄
 
 ## Adding Empty Line around Blocks
 
@@ -63,4 +58,3 @@ To add an empty line above or below a block:
 
 - Hover over or under the centre of the block. An arrow {% icon classes="far fa-caret-square-down" /%} would show.
 - Click on the arrow to add an empty line.
-
