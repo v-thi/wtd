@@ -34,8 +34,21 @@ Your work will be acknowledged publicly, and you’ll be helping other users of 
 
 ✨ You enjoy improving clarity, structure, and user experience
 
+
+## How it works
+🔹 We’ll give you access to our docs project inside DeveloperHub
+
+🔹 You can edit directly in the UI, or make a pull request of this repository
+
+🔹 Try the AI writer in DeveloperrHub to enhance a section and share your experience
+
+🔹 No coding required, but GitHub users can also try the repo sync!
+
+
 ## Links
-👉 [https://docs.developerhub.io](DeveloperHub.io Docs)
-👉 [https://wtd.developerhub.io](Duplicate docs we will be editing for this project)
+👉 [Actual DeveloperHub.io Docs](https://docs.developerhub.io)
+👉 [Duplicate docs we will be editing for this project](https://wtd.developerhub.io)
+👉 [DeveloperHub.io Site](https://developerhub.io)
+👉 [DeveloperHub.io Login](https://app.developerhub.io)
 
 No prior DeveloperHub experience needed—fresh perspectives welcome!
