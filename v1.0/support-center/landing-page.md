@@ -10,53 +10,53 @@ keywords:
 tags: 
 ---
 
-Help your readers find the resources they need right from Hello!
+Help your readers easily locate the resources they need directly from Hello!
 
 There are two types of Landing Pages:
 
 - Main landing page: The page that lives at the root `/` of the docs site.
-- Other landing pages: Pages that live on other paths. Other landing pages can be designated as 404 pages.
+- Other landing pages: These are pages that reside on different paths within the site structure. Additionally, certain other landing pages can be designated specifically as 404 error pages, serving as user-friendly notices when requested content cannot be found.
 
 {% image url="https://uploads.developerhub.io/prod/8gDX/dbvfs91re3vdnrn94lyaq9fx1lbuq54g4j3yknkgx3kxtn6n5jl85oq9n3lc159e.png" mode="responsive" height="709" width="1035" %}
 {% /image %}
 
 ## Main Landing Page
 
-The main landing page is a modern smart entry point where your readers understand the contents of your developer hub. The main landing page lists the content of your project in a compact way in one page. The content is listed in a card format, where each card could link to a documentation or category, depending on the [structure](/support-center/landing-page#cards-generation-strategy) of your project.
+The main landing page is a modern entry point for your readers to understand your developer hub. It shows your project’s content compactly on one page. The content is organized in card format, with each card linking to a documentation or category, based on the [structure](/support-center/landing-page#cards-generation-strategy) of your project.
 
 ## Main Landing Page Contents
 
 Main landing page contains two main sections:
 
-- **Hero**: Configurable title and a button that goes to the default page of your developer hub.
-- **Cards**: An auto-generated list of cards that link to specific sections of your developer hub.
+- **Hero**: A customizable title accompanied by a button that directs users to the default page of your developer hub.
+- **Cards**: An automatically generated collection of cards that provide direct links to specific sections of your developer hub. These cards enhance navigation and improve accessibility, allowing users to quickly find relevant information within the hub.
 
 ## Cards Generation Strategy
 
-Cards are auto-generated according to the structure of your developer hub. The strategy for generating the cards is as such:
+Cards are automatically generated based on the structure of your developer hub. The card generation strategy operates as follows:
 
 ### Documentation
 
-- If your developer hub contains multiple documentation, every documentation is contained in a card. Categories and pages are listed for every documentation in the card.
-- If your developer hub contains one documentation, every category is contained in a card listing pages under it. If there are no categories, one card is listed having the pages.
+- If your developer hub has multiple documentations, each documentation is shown in a card. Categories and pages for each documentation are listed in the card.
+- If your developer hub has one documentation, each category appears in a card that lists the pages within it. If there are no categories, a single card lists the pages.
 
 ## References
 
 Every reference is contained in its own card.
 
-## Customising Landing Page
+## Customizing Landing Page
 
-Main landing page can be customised as such:
+You can customize the main landing page like this:
 
-- **Hero background**: In your sidebar under Landing Page, you can choose a pattern for the background. The colour is the same as your [main colour](/support-center/customising-visuals#changing-colours).
-- **Hero title**: The title can be changed directly from your Landing Page by editing it.
-- **Hero button**: The button text can be changed by clicking on the button. You may also remove the button completely.
+- **Hero background**: In your sidebar under Landing Page, you can select a pattern for the background. The color matches your [main colour](/support-center/customising-visuals#changing-colours).
+- **Hero title**: You can change the title directly from your Landing Page by editing it.
+- **Hero button**: You can change the button text by clicking on it. You can also remove the button entirely.
 
 All landing pages can be enabled or disabled as needed from the sidebar as well.
 
-Landing page META description can be modified from its settings.
+The META description for the landing page can be easily modified through its settings.
 
-Further customisation can be done using [Custom CSS](/support-center/custom-css) and [Custom Javascript](/support-center/custom-javascript) features.
+You can further customize by using the [Custom CSS](/support-center/custom-css) and [Custom Javascript](/support-center/custom-javascript) features.
 
 ## Custom Landing Page
 
@@ -82,13 +82,13 @@ To remove a landing page, other than the main landing page, follow these steps:
 
 ## 404 Page
 
-A landing page can be designated as a 404 page. When a reader visits an unrecognised URL, they would be taken to this 404 landing page. To designate a landing page as a 404 page:
+A landing page can be set as a 404 page. When someone visits an unrecognized URL, they will be taken to this 404 page. To set a landing page as a 404 page:
 
 1. From the sidebar, choose {% icon classes="fas fa-rocket inv-icon" /%} Landing Pages.
 2. Choose the landing page you wish to designate.
 3. Click on the settings {% icon classes="fas fa-cog" /%}
 4. Toggle Use as a 404 Page.
 
-{% callout type="info" title="One 404 page" %}
+{% callout type="warning" title="One 404 page" %}
 Only one 404 page can exist in the project
 {% /callout %}
