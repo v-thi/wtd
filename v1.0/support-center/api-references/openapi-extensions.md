@@ -10,15 +10,13 @@ keywords:
 tags: 
 ---
 
-
-The following extensions are available on %product%.
+The following extensions are available on %product%:
 
 ## x-tagGroups
 
-`x-tagGroups` groups operations in the index, creating one further hierarchy. This feature is only enabled if the  [index is set to be collapsible](/support-center/api-reference-settings#allow-index-to-collapse).
+`x-tagGroups` serves to group operations within the index, effectively establishing an additional hierarchy. This feature is activated exclusively when the [index is configured to be collapsible](/support-center/api-reference-settings#allow-index-to-collapse).
 
-Tag groups can be defined as such in OpenAPI:
-
+In OpenAPI, tag groups can be defined in the following manner:
 
 {% code %}
 {% tab language="yaml" %}
@@ -41,13 +39,11 @@ x-tagGroups:
 {% /tab %}
 {% /code %}
 
-
 ## x-enum-varnames
 
 `x-enum-varnames` gives a secondary name for an enum.
 
 Enum var names can be defined as such in OpenAPI:
-
 
 {% code %}
 {% tab language="yaml" title="" %}
@@ -62,14 +58,12 @@ Animal:
 {% /tab %}
 {% /code %}
 
-
 ## Variables
 
-In addition to using [variables](/support-center/variables) throughout the API references, those variables can also be used:
+In addition to utilizing [variables](/support-center/variables) throughout the API references, you can also leverage these variables in the following ways:
 
 - `%_.project.base_path%` for project base path.
 - `%_.version.slug%` for version slug.
 - `%_.section.slug%` for API reference slug.
 
-Those variables are specifically useful to construct links inside markdown descriptions.
-
+These variables are particularly valuable for creating links within markdown descriptions.
